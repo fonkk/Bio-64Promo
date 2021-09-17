@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'TTNorms';
+    src: local('TTNorms Regular'), url('../fonts/TTNorms-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTNorms';
+    src: local('TTNorms Bold'), url('../fonts/TTNorms-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UniSans';
+    src: local('UniSans Heavy'), url('../fonts/Uni_Sans_Heavy.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}

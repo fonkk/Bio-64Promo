@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <title>Bio64</title>
+</head>
+<body>
+  <section id="intro">
+    <div class="filter"></div>
+    <div>
+    <img src="img/logo-main.webp" id="intro-logo">
+    <h2><span>Обработка</span> от насекомых, грызунов и вирусов</h2>
+    <p>Что нужно обработать?</p>
+    <div class="choice">
+      <div>
+        <p>Кафе, склад, магазин или офис</p>
+        <button type="button" class="submit_button" id="commerce">Обработка помещения</button>
+      </div>
+      <div>
+        <p>Квартиру или частный дом</p>
+        <button type="button" class="submit_button" id="local">Обработка квартиры</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+      <nav>
+          <div>
+                  <div>
+                        <a href="../"><img src="img/logo-main.webp" id="menu-logo"></a>
+                        <ul>
+                              <li>
+                                    <a href="#results" class="scrollto">Отзывы</a>
+                              </li>
+                              <li>
+                                    <a href="#sertificates" class="scrollto">Сертификаты</a>
+                              </li>
+                              <li>
+                                    <a href="#contacts" class="scrollto">Kонтакты</a>
+                              </li>
+                        </ul>
+                  </div>
+                  <div id="right_part_of_nav">
+                              <p>Круглосуточно</p>
+                              <button type="button" name="button" id="nav-button">Позвонить</button>
+                  </div>
+                  <div id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+
+          </div>
+          <div id="contacts-nav">
+            <div>
+              <img src="img/telephone-white.svg">
+              <a href="tel:+79271044444">Телефон: +7(927)-104-44-44</a>
+            </div>
+            <div>
+              <img src="img/whatsapp.svg">
+              <a href="https://wa.me/79271149999" target="_blank">WhatsApp: +7(927)-114-99-99</a>
+            </div>
+          </div>
+      </nav>
+      <script src="js/intro.js"></script>
+      <div class="burger-menu">
+        <a href="../"><img src="img/logo-main.webp" id="menu-logo"></a>
+        <ul>
+              <li>
+                    <a href="#results" class="scrollto">Отзывы</a>
+              </li>
+              <li>
+                    <a href="#sertificates" class="scrollto">Сертификаты</a>
+              </li>
+              <li>
+                    <a href="#contacts" class="scrollto">Kонтакты</a>
+              </li>
+              <li>
+                <div>
+                <img src="img/telephone-white.svg">
+                <a href="tel:+79271044444">Телефон: +7(927)-104-44-44</a>
+              </div>
+            </li>
+              <li>
+                <div>
+                  <img src="img/whatsapp.svg">
+                  <a href="https://wa.me/79271149999" target="_blank">WhatsApp: +7(927)-114-99-99</a>
+                </div>
+              </li>
+        </ul>
+        <button type="button" class="close">✖</button>
+      </div>
+
+      <script>
+        document.querySelector('#burger').onclick = showMenu;
+        document.querySelector('.close').onclick = showMenu;
+        function showMenu(){
+          document.querySelector('.burger-menu').classList.toggle('show');
+        }
+      </script>
+
+      <section class="local">
+        <header>
+           <div class="right-hide">
+                 <h1>Полностью избавим вас от насекомых, грызунов или вирусов <span>Выезд в течение 24 часов</span></h1>
+                 <ul class="ul_with_icon">
+                       <li>
+                           <div id="green_border_rotate"><img src="img/money_icon.svg" id="icon_in_rotate_border"></div>
+
+                           <p>Стоимость от 500₽</p>
+                       </li>
+                       <li>
+                          <div id="green_border_rotate">
+                                <img src="img/time_tracking.svg" id="icon_in_rotate_border">
+                          </div>
+                          <p>Экспресс-выезд за 1 час, обработка за 20 минут</p>
+                       </li>
+                       <li>
+                          <div id="green_border_rotate">
+                                <img src="img/way.svg" id="icon_in_rotate_border">
+                         </div>
+                          <p>Саратов, Энгельс и Саратовская область</p>
+                       </li>
+                 </ul>
+                 <p>Получите консультацию и расчёт стоимости бесплатно</p>
+                 <div>
+                    <form id="inputs_in_header" action="mail.php">
+                          <input type="text"  placeholder="Введите ваш телефон" name="tel" class ="input_phone_1" required>
+                          <button class = "submit_button" id="submit_button_1" type="submit">Получить консультацию</button>
+                    </form>
+                 </div>
+                 <p>Мы перезвоним вам в течение нескольких минут</p>
+           </div>
+           <div id="rat_img" class="left-hide">
+                <img src="img/rat.jpeg">
+                 <div class="pos1">
+                    <div>
+                          <div></div>
+                    </div>
+                 </div>
+           </div>
+        </header>
+      </section>
+      <section class="commerce">
+        <header>
+           <div class="right-hide">
+                 <h1>Обработаем ваше помещение от насекомых, грызунов или вирусов <span>Выезд в течение 24 часов</span></h1>
+                 <ul class="ul_with_icon">
+                       <li>
+                           <div id="green_border_rotate"><img src="img/money_icon.svg" id="icon_in_rotate_border"></div>
+
+                           <p>Стоимость от 500₽</p>
+                       </li>
+                       <li>
+                          <div id="green_border_rotate">
+                                <img src="img/time_tracking.svg" id="icon_in_rotate_border">
+                          </div>
+                          <p>Экспресс-выезд за 1 час, обработка за 20 минут</p>
+                       </li>
+                       <li>
+                          <div id="green_border_rotate">
+                                <img src="img/way.svg" id="icon_in_rotate_border">
+                         </div>
+                          <p>Саратов, Энгельс и Саратовская область</p>
+                       </li>
+                 </ul>
+                 <p>Получите консультацию и расчёт стоимости бесплатно</p>
+                 <div>
+                    <form id="inputs_in_header" action="mail.php">
+                          <input type="text"  placeholder="Введите ваш телефон" class ="input_phone_1" name="tel" required>
+                          <button class = "submit_button" id="submit_button_1">Получить консультацию</button>
+                    </form>
+                 </div>
+                 <p>Мы перезвоним вам в течение нескольких минут</p>
+           </div>
+           <div id="rat_img" class="left-hide">
+                <img src="img/new.jpg">
+           </div>
+        </header>
+      </section>
+
+      <section id="problems">
+            <div>
+                  <h2><span>Мы поможем</span>, если вас беспокоят</h2>
+                  <img src="img/man.png" id="superman">
+
+                  <div class="problem" id="bug_div">
+                        <img src="img/bug.svg">
+                        <p>Насекомые</p>
+                  </div>
+                  <div class="line" id="bug_line"><div></div></div>
+                  <img src="img/fog.png" id="fog">
+
+                  <div class="problem" id="cockroach_div">
+                        <img src="img/cockroach.svg">
+                        <p>Тараканы</p>
+                  </div>
+                  <div class="line" id="cockroach_line"><div></div></div>
+
+                  <div class="problem" id="bedbug_div">
+                        <img src="img/bedbug.svg">
+                        <p>Клопы</p>
+                  </div>
+                  <div class="line" id="bedbug_line"><div></div></div>
+
+                  <div class="problem" id="flea_div">
+                        <img src="img/flea.svg">
+                        <p>Блохи</p>
+                  </div>
+                  <div class="line" id="flea_line"><div></div></div>
+
+                  <div class="problem" id="ant_div">
+                        <img src="img/ant.svg">
+                        <p>Другие насекомые</p>
+                  </div>
+                  <div class="line" id="ant_line"><div></div></div>
+
+                  <!--right side-->
+
+                  <div class="problem" id="rat_icon_1_div">
+                        <img src="img/rat_icon_1.svg">
+                        <p>Грызуны</p>
+                  </div>
+                  <div class="line" id="rat_icon_1_line"><div></div></div>
+
+                  <div class="problem" id="rat_icon_2_div">
+                        <img src="img/rat_icon_2.svg">
+                        <p>Крысы</p>
+                  </div>
+                  <div class="line" id="rat_icon_2_line"><div></div></div>
+
+                  <div class="problem" id="mouse_div">
+                        <img src="img/mouse.svg">
+                        <p>Мыши</p>
+                  </div>
+                  <div class="line" id="mouse_line"><div></div></div>
+
+                  <div class="problem" id="Frame_div">
+                        <img src="img/Frame.svg">
+                        <p>Микроорганизмы</p>
+                  </div>
+                  <div class="line" id="Frame_line"><div></div></div>
+
+                  <div class="problem" id="virus_div">
+                        <img src="img/virus.svg">
+                        <p>Вирусы</p>
+                  </div>
+                  <div class="line" id="virus_line"><div></div></div>
+
+                  <div class="problem" id="bacteria_div">
+                        <img src="img/bacteria.svg">
+                        <p>Бактерии</p>
+                  </div>
+                  <div class="line" id="bacteria_line"><div></div></div>
+
+            </div>
+      </section>
+      <section id="docs" class="commerce">
+            <div class="docs">
+                  <div id="docs_left_side">
+                        <h2>Вы получите <span>все необходимые документы</span></h2>
+                        <p>В соответствии с требованиями <b>Федерального закона №52-ФЗ</b>, у лиц, ведущих предпринимательскую деятельность, обязательно наличие договора на проведение работ по дезинфекции, дезинсекции, дератизации и актов о выполненных работах.</p>
+                  </div>
+                  <div id="docs_right_side">
+                        <img src="img/documents_with_seal.png">
+                  </div>
+            </div>
+      </section>
+      <section id="how">
+            <div class="block_3">
+                  <h2> <span>Как происходит обработка</span> вашего дома?</h2>
+                  <ul class="ul_row">
+                        <li>
+                              <div class="green_border">
+                                    <img src="img/analysis.svg" class="icon_in_border">
+                              </div>
+                              <p id="bold_p_in_block_3">Заявка</p>
+                              <p>Наш специалист проводит полный анализ текущей ситуации</p>
+                        </li>
+                        <li>
+                              <div class="green_border">
+                                    <img src="img/boxes.svg" class="icon_in_border">
+                              </div>
+
+                              <p id="bold_p_in_block_3">Подготовка</p>
+                              <p>Вы убираете открытые продукты питания и средства личной гигиены</p>
+                        </li>
+                        <li>
+                              <div class="green_border">
+                                    <img src="img/pesticide.svg" class="icon_in_border">
+                              </div>
+                              <p id="bold_p_in_block_3">Обработка</p>
+                              <p>Наши специалисты проводят обработку всего помещения</p>
+                        </li>
+                        <li>
+                              <div class="green_border">
+                                    <img src="img/clock.svg" class="icon_in_border">
+                              </div>
+                              <p id="bold_p_in_block_3">Экспозиция</p>
+                              <p>Помещение полностью закрывается на 4 часа</p>
+                        </li>
+                        <li>
+                              <div class="green_border">
+                                    <img src="img/window.svg" class="icon_in_border">
+                              </div>
+                              <p id="bold_p_in_block_3">Постобработка</p>
+                              <p>После обработки помещение достаточно только проветрить</p>
+                        </li>
+                  </ul>
+            </div>
+      </section>
+      <section id="block_4">
+            <div class="block_4">
+                  <img src="img/stim1.png" id="fog_2">
+                  <div>
+                       <img src="img/sanitar.png" id="sanitar2">
+
+                  </div>
+                  <div>
+                        <h2>Почему <span>вы можете спокойно доверить свою проблему</span> нам?</h2>
+                        <ul class="ul_with_icon">
+                              <li>
+                                    <img src="img/Ellipse.svg">
+                                    <p>Вы получите реальный результат с гарантией</p>
+                              </li>
+                              <li>
+                                    <img src="img/Ellipse.svg">
+                                    <p>Профессиональное оборудование и мощная химия</p>
+                              </li>
+                              <li>
+                                    <img src="img/Ellipse.svg">
+                                    <p>Нет скрытых платежей</p>
+                              </li>
+                              <li>
+                                    <img src="img/Ellipse.svg">
+                                    <p>Работаем комплексно, до результата</p>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+
+      </section>
+      <section>
+             <div class="block_5">
+                  <div>
+                        <div>
+                              <div>
+                                    <h2>Избавьтесь от вашей проблемы <span>уже сегодня</span></h2>
+                                    <p>Получите консультацию  и расчёт стоимости бесплатно</p>
+                                    <form action="mail.php">
+                                          <input type="text" class="input_phone_2" maxlength="20"  placeholder="Ваше имя">
+                                          <input type="text"class="input_phone_2" required placeholder="Ваш телефон">
+                                          <button class="submit_button"> Получить консультацию</button>
+                                    </form>
+                              </div>
+                        </div>
+                  </div>
+             </div>
+      </section>
+      <section id="do_not_hesitate" class="local">
+             <div class="block_6">
+                  <h2>Почему <span>не стоит медлить</span> с обработкой?</h2>
+                  <img src="img/woomen.png" id="woomen">
+                  <img src="img/rhombus.png" id="rhombus">
+
+                  <div class="answer" id="headache_div">
+                        <p>Стресс и дискомфорт от нахождения дома будут постепенно только усиливаться</p>
+                        <img src="img/headache.svg">
+                  </div>
+                  <div class="line" id="headache_line"><div></div></div>
+
+                  <div class="answer" id="trash_div">
+                        <p>Люди неосознанно будут ассоциировать вас с нечистоплотностью</p>
+                        <img src="img/trash.svg">
+                  </div>
+                  <div class="line" id="trash_line"><div></div></div>
+
+                  <div class="answer" id="sneeze_div">
+                        <img src="img/sneeze.svg">
+                        <p>Вы и вашие близкие можете получить серьёзные проблемы со здоровьем</p>
+                  </div>
+                  <div class="line" id="sneeze_line"><div></div></div>
+
+                  <div class="answer" id="insomnia_div">
+                        <img src="img/insomnia.svg">
+                        <p>Бессонница и фанатичный контроль за чистотой</p>
+                  </div>
+                  <div class="line" id="insomnia_line"><div></div></div>
+             </div>
+      </section>
+      <section id="do_not_hesitate_2" class="commerce">
+            <div>
+
+                  <h2>Почему <span>не стоит медлить</span> с обработкой?</h2>
+                  <img src="img/plate_with_insects.png" id="plate_with_insects">
+
+                  <div class="answer2" id="gavel_div">
+                        <img src="img/gavel.svg">
+                        <p>Штрафы от Роспотребнадзора</p>
+                  </div>
+                  <div class="line" id="gavel_line"><div></div></div>
+
+                  <div class="answer2" id="table_div">
+                        <img src="img/table.svg">
+                        <p>Отток клиентов</p>
+                  </div>
+                  <div class="line" id="table_line"><div></div></div>
+
+                  <div class="answer2" id="rate_div">
+                        <img src="img/rate.svg">
+                        <p>Подрыв репутации</p>
+                  </div>
+                  <div class="line" id="rate_line"><div></div></div>
+
+            </div>
+      </section>
+      <section class="commerce">
+            <div class="clients">
+                  <h2>К нам обращаются <span>лидеры рынка</span></h2>
+                  <ul>
+                        <li>
+                              <img src="img/mac.jpg">
+                        </li>
+                        <li>
+                              <img src="img/gazProm.jpg">
+                        </li>
+                        <li>
+                              <img src="img/rosNeft.jpg">
+                        </li>
+                        <li>
+                              <img src="img/cofeeAndChocolate.jpg">
+                        </li>
+                        <li>
+                              <img src="img/Rjd.png">
+                        </li>
+                  </ul>
+            </div>
+      </section>
+      <section id="results">
+            <div class="block_7">
+                  <h2>Вы можете получить такие же <span>результаты</span></h2>
+                  <div>
+                        <div class="green_border" id="green_border_in_res">
+                          <div id="yandex_reviews" style="width:560px;height:482px;overflow:hidden; position:relative; margin-left: 0;margin-right: 0;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/1057029764?comments"></iframe><a href="https://yandex.ru/maps/org/bio64_tsentr_dezinfektsii/1057029764/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0">Био64 центр дезинфекции на карте Саратова — Яндекс.Карты</a></div>
+                        </div>
+                        <div class="green_border" id="green_border_in_res">
+                              <div id="google_reviews">
+                                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                                    <div class="elfsight-app-eec397cb-20a2-4e7d-883b-320ebabda16f" id="google_reviews_div"></div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <section id="sertificates">
+            <div class="block_8">
+                  <h2>Все препараты абсолютно <span>безопасны</span></h2>
+                  <p>Все используемые препараты сертифицированы и абсолютно безопасны для людей и животных</p>
+                  <div>
+                        <img src="img/sertificate.jpg">
+                        <img src="img/sertificate.jpg">
+                        <img src="img/sertificate.jpg">
+                        <img src="img/sertificate.jpg">
+                  </div>
+            </div>
+      </section>
+      <section>
+            <div class="block_9">
+                  <div>
+                        <div class="green_border">
+                              <div class="green_border">
+                                    <h2 id="block_9_h2">Остались <span>вопросы</span>? Давайте ответим</h2>
+                                    <div id="container">
+                                          <div>
+                                                <div class="green_border">
+                                                      <p id="bold_p_in_block_9">А ваша химия не испортит мебель и интерьер?</p>
+                                                </div>
+                                                <p>Все наши способы обработки абсолютно безвредны для любых материалов и не оставят никаких следов</p>
+                                          </div>
+                                          <div>
+                                                <div class="green_border">
+                                                      <p id="bold_p_in_block_9">Могу ли я вернуться сразу после обработки?</p>
+                                                </div>
+                                                <p>Нет, вернуться можно только спустя определённый промежуток времени. Иначе рискуете получить симптомы различной тяжести.</p>
+                                          </div>
+                                          <div>
+                                                <div class="green_border">
+                                                      <p id="bold_p_in_block_9">Это безопасно для людей и животных?</p>
+                                                </div>
+                                                <p>Любая наша обработка абсолютна безопасна для людей и животных при соблюдении необходимых норм</p>
+                                          </div>
+                                          <div>
+                                                <div class="green_border">
+                                                      <p id="bold_p_in_block_9">Нужно ли обрабатывать всё помещение?</p>
+                                                </div>
+                                                <p>Обработка всего помещения гораздо эффективнее, потому что зачастую источники проблемы могут находиться и в других комнатах</p>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <footer id="contacts">
+          <h2><span>Контакты</span></h2>
+          <div>
+                <a href="../"><img src="img/logo-main.webp" id="menu-logo" ></a>
+                <p>Круглосуточно</p>
+
+                <div>
+                  <div>
+                    <img src="img/telephone.svg">
+                    <a href="tel:+79271044444">Телефон: +7(927)-104-44-44</a>
+                  </div>
+                  <div>
+                    <img src="img/whatsapp.svg">
+                    <a href="https://wa.me/79271149999" target="_blank">WhatsApp: +7(927)-114-99-99</a>
+                  </div>
+                </div>
+                <p>info@bio64.ru</p>
+          </div>
+      </footer>
+
+
+<script src="js/animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="jquery.maskedinput.min.js"></script>
+  <script>
+  	$(function(){
+  $(".input_phone_1").mask("8(999) 999-9999");
+      $(".input_phone_2:last-of-type").mask("8(999) 999-9999");
+  });
+  </script>
+<script src="js/perehod.js"></script>
+  <!— Chatra {literal} —>
+<script>
+(function(d, w, c) {
+w.ChatraID = '5hzxaeMYDWWtvbxi4';
+var s = d.createElement('script');
+w[c] = w[c] || function() {
+(w[c].q = w[c].q || []).push(arguments);
+};
+s.async = true;
+s.src = 'https://call.chatra.io/chatra.js';
+if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+</script>
+<!— /Chatra {/literal} —>
+  <!— Yandex.Metrika counter —>
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(7766995, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/7766995" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!— /Yandex.Metrika counter —>
+</body>
+</html>
